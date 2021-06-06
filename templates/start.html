@@ -1,7 +1,10 @@
 {% extends "layouts/main.html" %}
 
 {% block content %}
+    <!--Displaying Tuple and Dictionary(Class also can be used) Values-->
+    <h1>{{person[0]}}</h1>
+    <h1>{{person[1]}}</h1>
     {% for item in items %}
-    <h2>{{item}}</h2>
+    <h2>{{item.name}} -- {{item.amount}}</h2>
     {% endfor %}
 {% endblock %}
